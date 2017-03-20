@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "http://localhost/schema/01/descriptions.json",
+  "id": "http://cropschema.tinymighty.com/schema/01/descriptions.json",
   "type": "object",
   "properties": {
     "overview": {

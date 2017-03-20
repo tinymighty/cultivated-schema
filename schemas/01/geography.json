@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "http://localhost/schema/01/geography.json",
+  "id": "http://cropschema.tinymighty.com/schema/01/geography.json",
   "type": "object",
   "properties": {
     "origin": {
@@ -8,8 +8,8 @@
       "items": {
         "type": "object",
         "properties": {
-          "location": {"$ref": "http://localhost/schema/01/location.json"},
-          "refs": {"$ref": "http://localhost/schema/01/refs.json"}
+          "location": {"$ref": "http://cropschema.tinymighty.com/schema/01/location.json"},
+          "refs": {"$ref": "http://cropschema.tinymighty.com/schema/01/refs.json"}
         }
       }
     }

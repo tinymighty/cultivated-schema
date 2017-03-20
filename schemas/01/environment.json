@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "http://localhost/schema/01/environment.json",
+  "id": "http://cropschema.tinymighty.com/schema/01/environment.json",
   "type": "object",
   "properties": {
     "tolerances": {
@@ -14,8 +14,8 @@
               "range": [-30,30]
             }
           },
-          "refs": {"$ref": "http://localhost/schema/01/refs.json"},
-          "meta": {"$ref": "http://localhost/schema/01/meta.json"}
+          "refs": {"$ref": "http://cropschema.tinymighty.com/schema/01/refs.json"},
+          "meta": {"$ref": "http://cropschema.tinymighty.com/schema/01/meta.json"}
         }
       }
     },
@@ -39,8 +39,8 @@
                   "type": "string"
                 }
               },
-              "refs": {"$ref": "http://localhost/schema/01/refs.json"},
-              "meta": {"$ref": "http://localhost/schema/01/meta.json"}
+              "refs": {"$ref": "http://cropschema.tinymighty.com/schema/01/refs.json"},
+              "meta": {"$ref": "http://cropschema.tinymighty.com/schema/01/meta.json"}
             },
             "required": [
               "exposure",
@@ -80,8 +80,8 @@
               "type": "string"
             }
           },
-          "refs": {"$ref": "http://localhost/schema/01/refs.json"},
-          "meta": {"$ref": "http://localhost/schema/01/meta.json"}
+          "refs": {"$ref": "http://cropschema.tinymighty.com/schema/01/refs.json"},
+          "meta": {"$ref": "http://cropschema.tinymighty.com/schema/01/meta.json"}
 
         },
         "required": [

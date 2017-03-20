@@ -1,16 +1,16 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "http://localhost/schema/01/plantdb.json",
+  "id": "http://cropschema.tinymighty.com/schema/01/plantdb.json",
   "type": "object",
   "properties": {
-    "names": {"$ref": "http://localhost/schema/01/names.json"},
-    "taxonomy": {"$ref": "http://localhost/schema/01/taxonomy.json"},
-    "descriptions": {"$ref": "http://localhost/schema/01/descriptions.json"},
-    "uses": {"$ref": "http://localhost/schema/01/uses.json"},
-    "toxicity": {"$ref": "http://localhost/schema/01/toxicity.json"},
-    "geography": {"$ref": "http://localhost/schema/01/geography.json"},
-    "environment": {"$ref": "http://localhost/schema/01/environment.json"},
-    "lifecycle": {"$ref": "http://localhost/schema/01/lifecycle.json"},
+    "names": {"$ref": "http://cropschema.tinymighty.com/schema/01/names.json"},
+    "taxonomy": {"$ref": "http://cropschema.tinymighty.com/schema/01/taxonomy.json"},
+    "descriptions": {"$ref": "http://cropschema.tinymighty.com/schema/01/descriptions.json"},
+    "uses": {"$ref": "http://cropschema.tinymighty.com/schema/01/uses.json"},
+    "toxicity": {"$ref": "http://cropschema.tinymighty.com/schema/01/toxicity.json"},
+    "geography": {"$ref": "http://cropschema.tinymighty.com/schema/01/geography.json"},
+    "environment": {"$ref": "http://cropschema.tinymighty.com/schema/01/environment.json"},
+    "lifecycle": {"$ref": "http://cropschema.tinymighty.com/schema/01/lifecycle.json"},
     "growth_rate": {
       "type": "array",
       "items": {}
@@ -19,9 +19,9 @@
       "type": "array",
       "items": {}
     },
-    "phenology": {"$ref": "http://localhost/schema/01/phenology.json"},
-    "aspect": {"$ref": "http://localhost/schema/01/aspect.json"},
-    "problems": {"$ref": "http://localhost/schema/01/problems.json"},
+    "phenology": {"$ref": "http://cropschema.tinymighty.com/schema/01/phenology.json"},
+    "aspect": {"$ref": "http://cropschema.tinymighty.com/schema/01/aspect.json"},
+    "problems": {"$ref": "http://cropschema.tinymighty.com/schema/01/problems.json"},
     "propagation": {
       "type": "array",
       "items": {}

@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "http://localhost/schema/01/aspect.json",
+  "id": "http://cropschema.tinymighty.com/schema/01/aspect.json",
   "type": "object",
   "properties": {
     "appearance": {
@@ -29,7 +29,7 @@
                "type": "string"
              }
            },
-           "refs": {"$ref": "http://localhost/schema/01/refs.json"}
+           "refs": {"$ref": "http://cropschema.tinymighty.com/schema/01/refs.json"}
           },
           "required": [
            "parts",
