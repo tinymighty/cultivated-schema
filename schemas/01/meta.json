@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://localhost/schema/01/meta.json",
+  "type": "object",
+  "properties": {
+    "weight": {
+      "type": "integer",
+      "range": [0,100]
+    },
+    "notes": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string",
+      "enum": ["expert", "enthusiast", "hearsay", "aggregate", "study"]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://localhost/schema/01/aspect.json",
+  "type": "object",
+  "properties": {
+    "appearance": {
+      "coloring": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+           "parts": {
+             "type": "array",
+             "items": {
+               "type": "string"
+             }
+           },
+           "not_parts": {
+             "type": "array",
+             "items": {}
+           },
+           "qualifiers": {
+             "type": "array",
+             "items": {}
+           },
+           "values": {
+             "type": "array",
+             "items": {
+               "type": "string"
+             }
+           },
+           "refs": {"$ref": "http://localhost/schema/01/refs.json"}
+          },
+          "required": [
+           "parts",
+           "exceptions",
+           "qualifiers",
+           "values",
+           "refs"
+          ]
+        }
+      }
+    },
+    "odour": {
+      "type": "object",
+      "properties": {}
+    }
+  },
+  "required": [
+   "appearance",
+   "scent"
+  ]
+}

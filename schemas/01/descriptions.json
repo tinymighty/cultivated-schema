@@ -1,0 +1,115 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://localhost/schema/01/descriptions.json",
+  "type": "object",
+  "properties": {
+    "overview": {
+      "type": "object",
+      "properties": {},
+      "patternProperties": {
+        "^([a-z]{2})([_-]{1}[A-Z]{2})?$": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "content": {
+                "type": "string"
+              },
+              "license": {
+                "type": "string"
+              },
+              "authors": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "content",
+              "license",
+              "authors"
+            ]
+          }
+        }
+      }
+    },
+    "life_cycle": {
+      "type": "object",
+      "properties": {},
+      "patternProperties": {
+        "^([a-z]{2})([_-]{1}[A-Z]{2})?$": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "content": {
+                "type": "string"
+              },
+              "license": {
+                "type": "string"
+              },
+              "attribution": {
+                "type": "string"
+              },
+              "attribution_uri": {
+                "type": "string"
+              },
+              "authors": {
+                "type": "array",
+                "items": {}
+              }
+            },
+            "required": [
+              "content",
+              "license",
+              "attribution",
+              "attribution_uri",
+              "authors"
+            ]
+          }
+        }
+      }
+    },
+    "propagation": {
+      "type": "object",
+      "properties": {},
+      "patternProperties": {
+        "^([a-z]{2})([_-]{1}[A-Z]{2})?$": {
+          "content": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "cultivation": {
+      "type": "object",
+      "properties": {},
+      "patternProperties": {
+        "^([a-z]{2})([_-]{1}[A-Z]{2})?$": {
+          "content": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "notes": {
+      "type": "object",
+      "properties": {},
+      "patternProperties": {
+        "^([a-z]{2})([_-]{1}[A-Z]{2})?$": {
+          "content": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "overview",
+    "life_cycle",
+    "propagation",
+    "cultivation",
+    "notes"
+  ]
+}

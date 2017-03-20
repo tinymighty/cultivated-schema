@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://localhost/schema/01/taxon.json",
+  "type": "object",
+  "properties": {
+    "common": {
+      "type": "object",
+      "properties": {},
+      "patternProperties": {
+        "^([a-z]{2})([_-]{1}[A-Z]{2})?$": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "weight": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 100
+              },
+              "refs": {"$ref": "http://localhost/schema/01/refs.json"}
+            }
+          },
+          "required": [
+            "name",
+            "weight",
+            "refs"
+          ]
+        }
+      }
+    }
+  },
+  "required": [
+    "common"
+  ]
+}

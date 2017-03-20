@@ -1,0 +1,320 @@
+{
+  "descriptions": {
+    "overview": {
+      "en": [
+        {
+          "content": "Arbutus unedo is an evergreen shrub or tree native to parts of the Mediterranian and Western Europe[0] often occuring as part of scrub or heathland[1]. It's commonly planted in gardens as a decorative shrub for it's vivid and glossy evergreen foliage, attractive twisting stems, and clusters of white bell-shaped flowers which develop into a bounty of fleshy round red fruits[0] 1-3cm in diameter. It succeeds in poor, even rocky, soils[1] and is well adapted to dry summer conditions[0]. Traditinally prized as a wood for charcoal production[1] and as a fruit for liquers and preserves[2].",
+          "license": "Copyright Andru Vallance 2016. All rights reserved",
+          "authors": ["Andru Vallance"],
+          "refs": ["0", "5", "4"]
+        }
+      ]
+    },
+    "morphology": {
+      "en": [
+        {
+          "content": "*Arbutus unedo* grows to 5–10 m tall, rarely up to 15 m, with a trunk diameter of up to 80 cm. The leaves are dark green and glossy, 5–10 cm long and 2–3 cm broad, with a serrated margin. The hermaphrodite flowers are creamy white to pale pink, bell-shaped, 4–6 mm diameter, and produced in panicles of 10–30 together in autumn. The fruit is a fleshy red berry, 1–2 cm diameter, with a rough surface.",
+          "licence": "CC-BY-SA",
+          "attribution": "Wikipedia",
+          "attribution_uri": "https://en.wikipedia.org/wiki/Arbutus_unedo",
+          "refs": [],
+          "meta": {
+            "notes": "This text has been modified somewhat from the original. May constitute a derivative work at this point."
+          }
+        }
+      ]
+    },
+
+    "notes": {}
+  },
+
+  "uses": [
+    {
+      "type": "edible",
+      "parts": ["fruit", "berries"],
+      "not_parts": [],
+      "tags": ["preserve", "jam", "jelly"],
+      "advice": {
+        "en": "The fleshy berries have been used to make preserves[0]. The pulp is very seedy and is sometimes strained to produce a sweet and delicately flavoured jelly[0]."
+      },
+      "refs": ["4"]
+    },
+    {
+      "type": "edible",
+      "parts": ["fruit", "berries"],
+      "not_parts": [],
+      "tags": ["preserve", "jam", "jelly"],
+      "advice": {
+        "en": "Various traditional alcohols are produced from the berries[0], which often ferment and become slightly alchoholic before falling from the tree. Examples include the Português *medronho*[1] or the Albanian *raki*[1]"
+      },
+      "refs": ["4", "1"]
+    },
+    {
+      "type": "edible",
+      "parts": ["flowers"],
+      "not_parts": [],
+      "tags": ["honey"],
+      "advice": {
+        "en": "Like other plants in the family, honey from *Arbutus unedo* flowers is prized for it's dark colour and complex, bitter flavour[0]."
+      },
+      "refs": ["0"]
+    },
+    {
+      "type": "material",
+      "parts": ["wood"],
+      "not_parts": [],
+      "tags": ["firewood", "charcoal", "fuel"],
+      "advice": {
+        "en": "*Arbutus unedo* wood is dense and has been traditionally used in some regions as a source of charcoal for iron smelting due to it's high burning temperature."
+      }
+    },
+    {
+      "type": "material",
+      "parts": ["wood"],
+      "tags": ["carpentry"],
+      "advice": {
+        "en": "Despite dense attractive wood, reported uses of *Arbutus unedo* in traditional carpentry are rare due to it's growth habit of twisty stem growth and tendancy to form large radial splits while drying."
+      },
+      "refs": ["3"]
+    }
+  ],
+
+  "toxicity": [],
+
+  "names": {
+    "common": {
+      "en": [
+        {
+          "name": "Strawberry Tree",
+          "meta": {"weight":10},
+          "refs": [0]
+        }
+      ],
+      "en_GB": [
+        {
+          "name": "Killarney Strawberry Tree",
+          "meta": {"weight":0},
+          "refs": [0]
+        }
+      ],
+      "es": [
+        {
+          "name": "Madrono",
+          "meta": {"weight":1},
+          "refs":[1]
+        }
+      ],
+      "pt": [
+        {
+          "name": "Medronho",
+          "meta": {"weight":1},
+          "refs":[1]
+        }
+      ]
+    }
+  },
+
+  "taxonomy": {
+   "rank": "species",
+   "name": "Arbutus unedo",
+   "tree": [
+      {"rank": "family", "name": "ericaceae"},
+      {"rank": "genus", "name": "arbutus"},
+      {"rank": "species", "name": "unedo"}
+    ]
+  },
+
+  "geography": {
+    "origin": [
+      {
+        "location": "region/Western_Europe",
+        "refs": [2]
+      },
+      {
+        "location": "region/Southern_Europe",
+        "refs": [2]
+      },
+      {
+        "location": "region/Mediterranian",
+        "refs": [2]
+      },
+      {
+        "location": "nation/IE",
+        "refs": [2]
+      }
+    ]
+  },
+
+  "environment": {
+    "tolerances": {
+      "minimum_temperature": [
+        {"range": [-15,0], "refs":["2"], "meta":{"weight": 70}}
+      ]
+    },
+    "preferences": {
+      "light": [
+        {
+          "exposure": ["full"],
+          "context": "climate_region",
+          "climate": ["temperate"],
+          "refs":["4","5"]
+        },
+        {
+          "exposure": ["full", "partial"],
+          "context": "climate_region",
+          "climate": ["tropic", "subtropic"],
+          "refs":["5"]
+        },
+        {
+          "exposure": ["full"],
+          "context": "location",
+          "location": "nation/UK",
+          "refs":["6"]
+        }
+      ],
+      "water": [],
+      "soil_ph": [],
+      "soil_texture": []
+    },
+
+    "hardiness_zones": [
+      {
+        "scale": "USDA",
+        "range": ["7","11"],
+        "refs": ["4"],
+        "meta": {"weight":5}
+      },
+      {
+        "scale": "USDA",
+        "range": ["7b","9b"],
+        "refs": ["3"],
+        "meta": {"weight":1}
+      },
+      {
+        "scale": "RHS",
+        "range": ["5a"],
+        "refs": ["6"],
+        "meta": {"weight":5}
+      }
+
+    ]
+  },
+
+  "lifecycle": [
+    {
+      "context": "natural",
+      "type": "perennial",
+      "refs":[]
+    }
+  ],
+
+  "growth_rate": [],
+  "mature_size": [],
+
+  "phenology": {
+    "flowering": [
+      {
+        "type": "phenology_data",
+        "constraints": [
+          {"type": "min_day_length", "range": [11, 12]}
+        ]
+      },
+      {
+        "type": "regional_observation",
+        "constraints": [
+          {"type": "location", "values":["region/Southern_Europe"]},
+          {"type": "days_of_year", "range":[300,400]}
+        ]
+      }
+    ],
+    "fruiting": [
+      {
+        "type": "phenology_data",
+        "constraints": [
+          {"type": "GDD_min", "range": [8000, 9500]}
+        ]
+      },
+      {
+        "type": "regional_observation",
+        "constraints": [
+          {"type": "location", "values":["region/Southern_Europe"]},
+          {"type": "days_of_year", "range": [300,400]}
+        ]
+      }
+    ]
+  },
+
+  "aspect":{
+    "appearance": {
+      "coloring": [
+        {"parts": ["fruit"], "not_parts": [], "qualifiers": ["mature"], "values": ["red", "orange"], "refs": [2]},
+        {"parts": ["fruit"], "not_parts": [], "qualifiers": ["immature"], "values": ["yellow", "green"], "refs": [2]},
+        {"parts": ["flower"], "not_parts": [], "qualifiers": [], "values": ["white", "light pink", "cream"], "refs": [2]},
+        {"parts": ["leaf"], "not_parts": [], "qualifiers": [], "values": ["green"], "refs": [2]}
+      ]
+    },
+    "odour": {
+
+    }
+  },
+
+  "common_problems": [
+    {"type": "disease", "name": "", "species":[], "refs":[]},
+    {"type": "deficiency", "name": "", "refs":[]},
+    {"type": "pest", "name": "", "species":[], "geography":[], "environment":[], "refs":[]}
+  ],
+
+  "propagation": [
+    {
+      "method": "seed",
+      "germination": [
+        {
+          "metric": "days",
+          "days": [60, 90],
+          "contraints": [
+            {"type": "temperature", "minimum": 5, "recommended": 20 },
+            {"type": "stratification", "days": 40}
+          ],
+          "refs": [""]
+        }
+      ],
+      "text": {
+        "en_GB": "The seed is best surface sown in a cold frame as soon as it is ripe. Stored seed should be soaked for 5 - 6 days in warm water and then surface sown in a shady position in a greenhouse[16]. Do not allow the compost to become dry. 6 weeks cold stratification helps[18]. The seed usually germinates well in 2 - 3 months at 20°C[18]. Seedlings are prone to damp off[19], they are best transplanted to individual pots as soon as they are large enough to handle and should be kept well ventilated. Grow them on in a greenhouse for their first winter and then plant out in late spring after the last expected frosts[1]."
+      }
+    },
+    {
+      "method": "cutting",
+      "text": {
+        "en": "Basal cuttings in late winter[15], by cuttings of mature wood of the current season's growth, November/December [Britain] in a frame. Poor percentage[16]."
+      }
+    },
+    {
+      "method": "layering",
+      "text": {
+        "en": "Layering of young wood - can take 2 years[17][15]"
+      }
+    }
+  ],
+  "cultivation": [
+    {
+      "text": "Requires a nutrient-rich well-drained moisture-retentive soil in sun or semi-shade and shelter from cold drying winds, especially when young[20][15]. Grows well in heavy clay soils and in dry soils. Most species in this genus require a lime-free soil but this species is fairly lime tolerant[20][15]. Succeeds in fairly exposed maritime positions[21][15]. Tolerates industrial pollution[15]. Plants have withstood temperatures down to -16°c without injury at Kew[20]. They grow very well in S.W. England, fruiting well in Cornwall[22][23]. Plants resent root disturbance and are best placed in their final positions whilst young[20][18]. Give them some protection in their first winter. \nThere are a number of named varieties[24] developed for their ornamental value. 'Elfin King', 'Croomei' and 'Rubra' are all small forms that fruit well when small[25]. The variety 'Rubra' was 1.2 metres tall at Kew in late 1990 and was laden down with fruits and flowers[K]. 'Elfin King' only reaches a height of 1 metre, comes into bearing when young and fruits well[24]. It is ideal for container culture[24]. 'Croomei' is said to be a more reliable fruiting form[22]."
+    }
+  ],
+  "harvest": [],
+
+  "subjective_qualifiers": {
+    "difficulty": [
+      {"rating": 1, "scale":[1, 5], "weight": 10, "refs": [2]}
+    ]
+  },
+
+  "references": {
+    "0": {"id": "org.wikipedia.en", "url": "https://en.wikipedia.org/wiki/Arbutus_unedo"},
+    "1": {"id": "org.wikipedia.es", "url": "https://es.wikipedia.org/wiki/Arbutus_unedo"},
+    "2": {"id": "com.myfolia", "url": "https://myfolia.com/plants/741-ground-cherry-physalis-pruinosa"},
+    "3": {"id": "com.davesgarden", "url": "http://davesgarden.com/guides/pf/go/53834"},
+    "4": {"id": "org.pfaf", "url": "http://pfaf.org/user/plant.aspx?LatinName=Arbutus+unedo"},
+    "5": {"id": "uk.ac.brc", "url": "https://www.brc.ac.uk/plantatlas/index.php?q=plant/arbutus-unedo"},
+    "6": {"id": "uk.org.rhs", "url": "https://www.rhs.org.uk/plants/details?plantid=158"}
+  }
+}

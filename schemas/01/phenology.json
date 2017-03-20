@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://localhost/schema/01/phenology.json",
+  "type": "object",
+  "properties": {
+    "flowering": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["phenology_data", "regional_observation"]
+          },
+          "constraints": {
+            "type": "object",
+            "properties": {}
+          },
+          "refs": {"$ref": "http://localhost/schema/01/refs.json"},
+          "meta": {"$ref": "http://localhost/schema/01/meta.json"}
+        }
+      }
+    },
+    "fruiting": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": ["phenology_data", "regional_observation"]
+          },
+          "constraints": {
+            "type": "object",
+            "properties": {}
+          },
+          "refs": {"$ref": "http://localhost/schema/01/refs.json"},
+          "meta": {"$ref": "http://localhost/schema/01/meta.json"}
+        }
+      }
+    }
+  },
+  "required": [
+    "flowering",
+    "fruiting"
+  ]
+}

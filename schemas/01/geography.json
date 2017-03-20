@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://localhost/schema/01/geography.json",
+  "type": "object",
+  "properties": {
+    "origin": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "location": {"$ref": "http://localhost/schema/01/location.json"},
+          "refs": {"$ref": "http://localhost/schema/01/refs.json"}
+        }
+      }
+    }
+  }
+}

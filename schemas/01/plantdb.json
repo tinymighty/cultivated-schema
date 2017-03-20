@@ -1,0 +1,101 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://localhost/schema/01/plantdb.json",
+  "type": "object",
+  "properties": {
+    "names": {"$ref": "http://localhost/schema/01/names.json"},
+    "taxonomy": {"$ref": "http://localhost/schema/01/taxonomy.json"},
+    "descriptions": {"$ref": "http://localhost/schema/01/descriptions.json"},
+    "uses": {"$ref": "http://localhost/schema/01/uses.json"},
+    "toxicity": {"$ref": "http://localhost/schema/01/toxicity.json"},
+    "geography": {"$ref": "http://localhost/schema/01/geography.json"},
+    "environment": {"$ref": "http://localhost/schema/01/environment.json"},
+    "lifecycle": {"$ref": "http://localhost/schema/01/lifecycle.json"},
+    "growth_rate": {
+      "type": "array",
+      "items": {}
+    },
+    "mature_size": {
+      "type": "array",
+      "items": {}
+    },
+    "phenology": {"$ref": "http://localhost/schema/01/phenology.json"},
+    "aspect": {"$ref": "http://localhost/schema/01/aspect.json"},
+    "problems": {"$ref": "http://localhost/schema/01/problems.json"},
+    "propagation": {
+      "type": "array",
+      "items": {}
+    },
+    "cultivation": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      }
+    },
+    "harvest": {
+      "type": "array",
+      "items": {}
+    },
+    "subjective_qualifiers": {
+      "type": "object",
+      "properties": {
+        "difficulty": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "rating": {
+                "type": "integer"
+              },
+              "weight": {
+                "type": "integer"
+              },
+              "refs": {
+                "type": "array",
+                "items": {
+                  "type": "integer"
+                }
+              }
+            },
+            "required": [
+              "rating",
+              "weight",
+              "refs"
+            ]
+          }
+        }
+      },
+      "required": [
+        "difficulty"
+      ]
+    },
+    "references": {
+      "type": "object",
+      "properties": {}
+    }
+  },
+  "required": [
+    "descriptions",
+    "uses",
+    "toxicity",
+    "names",
+    "taxonomy",
+    "geography",
+    "environment",
+    "life_cycle",
+    "phenology",
+    "common_problems",
+    "propagation",
+    "cultivation",
+    "harvest",
+    "references"
+  ]
+}

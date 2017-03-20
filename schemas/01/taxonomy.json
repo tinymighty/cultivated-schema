@@ -1,0 +1,63 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://localhost/schema/01/taxon.json",
+  "type": "object",
+  "properties": {
+    "rank": {
+      "type": "string",
+      "enum": [
+        "genus",
+        "subgenus",
+        "supersection",
+        "section",
+        "subsection",
+        "superseries",
+        "series",
+        "subseries",
+        "superspecies",
+        "species",
+        "subspecies",
+        "superstrain",
+        "strain",
+        "substrain",
+        "supertypestrain",
+        "typestrain",
+        "subtypestrain",
+        "supervariety",
+        "variety",
+        "subvarietas",
+        "superforma",
+        "forma",
+        "subforma",
+        "supergroup",
+        "group",
+        "subgroup",
+        "cultivar",
+        "cultivargroup"
+      ]
+    },
+    "name": {
+      "type": "string"
+    },
+    "tree": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "rank": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "rank",
+          "name"
+        ]
+      }
+    },
+    "refs": {"$ref": "http://localhost/schema/01/refs.json"},
+    "meta": {"$ref": "http://localhost/schema/01/meta.json"}
+  }
+}

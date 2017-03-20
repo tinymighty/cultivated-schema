@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://localhost/schema/01/location.json",
+  "type": "object",
+  "properties": {
+    "region": {
+      "type": "string",
+      "enum": [
+        "continent",
+        "subcontinent",
+        "nation state",
+        "region of nation state",
+        "historic nation",
+        "natural border",
+        "other"
+      ]
+    },
+    "name": {
+      "type": "object",
+      "properties": {},
+      "patternProperties": {
+        "^([a-z]{2})([_-]{1}[A-Z]{2})?$": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

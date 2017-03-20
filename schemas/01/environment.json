@@ -1,0 +1,100 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://localhost/schema/01/environment.json",
+  "type": "object",
+  "properties": {
+    "tolerances": {
+      "minimum_temperature": {
+        "type": "object",
+        "properties": {
+          "range": {
+            "type": "array",
+            "items": {
+              "type": "number",
+              "range": [-30,30]
+            }
+          },
+          "refs": {"$ref": "http://localhost/schema/01/refs.json"},
+          "meta": {"$ref": "http://localhost/schema/01/meta.json"}
+        }
+      }
+    },
+    "preferences": {
+      "type": "object",
+      "properties": {
+        "light": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "exposure": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "lat_context": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "refs": {"$ref": "http://localhost/schema/01/refs.json"},
+              "meta": {"$ref": "http://localhost/schema/01/meta.json"}
+            },
+            "required": [
+              "exposure",
+              "lat_context",
+              "refs"
+            ]
+          }
+        },
+        "water": {
+          "type": "array",
+          "items": {}
+        },
+        "soil_ph": {
+          "type": "array",
+          "items": {}
+        },
+        "soil_texture": {
+          "type": "array",
+          "items": {}
+        }
+      },
+      "required": [
+        "light",
+        "water",
+        "soil_ph",
+        "soil_texture"
+      ]
+    },
+    "hardiness_zones": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "range": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "refs": {"$ref": "http://localhost/schema/01/refs.json"},
+          "meta": {"$ref": "http://localhost/schema/01/meta.json"}
+
+        },
+        "required": [
+          "range",
+          "refs",
+          "weight"
+        ]
+      }
+    }
+  },
+  "required": [
+    "hardiness_zones",
+    "tolerances",
+    "preferences"
+  ]
+}

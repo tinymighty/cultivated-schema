@@ -1,0 +1,8 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://localhost/schema/01/refs.json",
+  "type": "array",
+  "items": {
+    "type": "string"
+  }
+}

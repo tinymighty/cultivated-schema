@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://localhost/schema/01/lifecycle.json",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "context": {
+        "type": "string"
+      },
+      "type": {
+        "type": "string",
+        "enum": ["annual", "biennial", "perennial"]
+      },
+      "constraints": {
+        "type": "object",
+        "properties": {}
+      },
+      "refs": {"$ref": "http://localhost/schema/01/refs.json"},
+      "meta": {"$ref": "http://localhost/schema/01/meta.json"}
+    },
+    "required": [
+      "context",
+      "type",
+      "refs"
+    ]
+  }
+}

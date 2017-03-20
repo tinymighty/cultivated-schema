@@ -1,0 +1,62 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://localhost/schema/01/toxicity.json",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "type": {
+        "type": "string",
+        "enum": [
+          "edible",
+          "medicinal",
+          "material"
+        ]
+      },
+      "parts": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "not_parts": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "severity": {
+        "type": "integer",
+        "range": [0, 5]
+      },
+      "dosage": {
+        "type": "integer",
+        "range": [0, 5]
+      },
+      "advice": {
+        "type": "object",
+        "properties": {},
+        "patternProperties": {
+          "^([a-z]{2})([_-]{1}[A-Z]{2})?$": {
+            "type": "string"
+          }
+        }
+      },
+      "refs_map": {
+        "type": "array",
+        "items": {
+          "type": "toxicity"
+        }
+      }
+    },
+    "required": [
+      "type",
+      "parts",
+      "not_parts",
+      "severity",
+      "dosage",
+      "advice",
+      "refs"
+    ]
+  }
+}
